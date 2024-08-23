@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::selection {
+    background: orange;
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #f3742b;
+}
+
+body .container {
+    width: max-content;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 320px 200px;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#board {
+    border: 2px solid black;
+}
+
+.play-btn {
+    background: greenyellow;
+    font-size: 1.6rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+}
+
+.play-btn:hover {
+    background: green;
+    color: white;
+    border: 1px solid green;
+    user-select: none;
+}
+
+#nextLevel {
+    background: greenyellow;
+    font-size: 1.4rem;
+    padding: 15px 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+}
+
+#nextLevel:hover {
+    background: green;
+    color: white;
+    border: 1px solid green;
+    user-select: none;
+}
+
+.side-bar div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.side-bar div h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.side-bar div p {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: normal;
+    padding: 0 0.5rem;
+}
+
+.side-bar div p span {
+    line-height: 1.25;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+#previousScore {
+    padding: 0 0.5rem;
+    line-height: 1.25;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.logo1 {
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.logo1:hover {
+    rotate: 360deg;
+}
+
+.logo2 {
+    position: absolute;
+    top: 3.5rem;
+    right: 20rem;
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.logo2:hover {
+    rotate: 360deg;
+}
+
+.notice {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.notice form {
+    width: max-content;
+    min-width: 50dvh;
+    height: max-content;
+    background: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.notice form button {
+    width: 80%;
+    background: #f3742b;
+    padding: 1.5rem 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s ease;
+    border-radius: 0.5rem;
+}
+
+.notice form button:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #f3742b;
+}
+
+.bee {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 2s linear;
+  }
